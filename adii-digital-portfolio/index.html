@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adii Digital | WordPress Developer — High-Converting Websites</title>
+    <meta name="description" content="Adnan Saeed (Adii Digital) — Freelance WordPress & Web Developer from Karachi, Pakistan. I build high-converting, SEO-optimized websites that grow your business. Available on Fiverr.">
+    <meta name="keywords" content="WordPress developer, freelance web developer, Fiverr, Karachi, Pakistan, landing pages, business websites, resume websites, Adnan Saeed, Adii Digital">
+    <meta name="author" content="Adnan Saeed — Adii Digital">
+    <meta property="og:title" content="Adii Digital | WordPress Developer">
+    <meta property="og:description" content="I build high-converting WordPress websites that turn visitors into paying customers.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://adiidigital.com/">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .fiverr-cta-btn { display: inline-flex; align-items: center; gap: 10px; background: #1dbf73; color: #fff; padding: 14px 26px; border-radius: 9999px; font-weight: 600; font-size: 0.95rem; transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: 0 4px 22px rgba(29, 191, 115, 0.35); text-decoration: none; }
+        .fiverr-cta-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 35px rgba(29, 191, 115, 0.5); }
+        .whatsapp-float { position: fixed; bottom: 24px; right: 24px; z-index: 999; width: 56px; height: 56px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4); transition: transform 0.3s ease; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
+        .pricing-cta-group { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+        .pricing-cta-group a { display: flex; align-items: center; justify-content: center; gap: 6px; font-weight: 600; font-size: 0.9rem; padding: 12px 20px; border-radius: 999px; transition: all 0.3s; text-decoration: none; }
+        .btn-wa { background: #25d366; color: white; } .btn-wa:hover { background: #1ebc59; transform: translateY(-2px); }
+        .btn-fiverr { background: #1dbf73; color: white; } .btn-fiverr:hover { background: #19a463; transform: translateY(-2px); }
+        .btn-contact { background: rgba(255,255,255,0.05); color: var(--text-primary); border: 1px solid var(--border-glass); } .btn-contact:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+        select option { background: #0f0f1a; color: #f0f0f5; }
+        @media (max-width: 600px) { .whatsapp-float { bottom: 16px; right: 16px; width: 48px; height: 48px; } .whatsapp-float svg { width: 24px; height: 24px; } }
+    </style>
+</head>
+<body>
+    <div class="loader-wrapper" id="loaderWrapper">
+        <div class="loader-content">
+            <svg class="loader-svg" viewBox="0 0 100 100">
+                <defs><linearGradient id="loaderGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6366f1"/><stop offset="50%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs>
+                <circle cx="50" cy="50" r="42" fill="none" stroke="url(#loaderGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="264"><animate attributeName="stroke-dashoffset" from="264" to="0" dur="1.4s" fill="freeze" repeatCount="1"/></circle>
+                <polygon points="50,28 62,48 78,52 66,66 68,84 50,76 32,84 34,66 22,52 38,48" fill="url(#loaderGrad)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1s" fill="freeze"/></polygon>
+            </svg>
+            <p class="loader-brand">ADII DIGITAL</p>
+        </div>
+    </div>
+
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    <div class="cursor-outer" id="cursorOuter"></div>
+    <div class="cursor-inner" id="cursorInner"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-brand"><svg class="nav-brand-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="2" y="2" width="22" height="22" rx="6" stroke="url(#navGrad)" stroke-width="2.2" fill="none"/><circle cx="13" cy="13" r="5" fill="url(#navGrad)" opacity="0.7"/><defs><linearGradient id="navGrad" x1="0" y1="0" x2="26" y2="26"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs></svg><span>Adii<span class="brand-accent">Digital</span></span></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+                <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+                <li><a href="#pricing" class="nav-link" data-section="pricing">Pricing</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-hire-btn magnetic-btn">Hire Me</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-layer"><div class="hero-orb hero-orb-1"></div><div class="hero-orb hero-orb-2"></div><div class="hero-orb hero-orb-3"></div><div class="hero-orb hero-orb-4"></div><div class="hero-grid-overlay"></div><div class="hero-noise"></div></div>
+        <div class="hero-content">
+            <div class="hero-availability-badge reveal-element"><span class="pulse-dot"></span> Available for New Projects — Response within 24h</div>
+            <h1 class="hero-headline reveal-element">I Build <span class="text-gradient">High-Converting</span><br>WordPress Websites</h1>
+            <p class="hero-subheadline reveal-element">Your website should do more than just look good — it should generate leads, close sales, and grow your revenue. I create WordPress sites engineered for <strong>real business results.</strong></p>
+            <div class="hero-cta-row reveal-element">
+                <a href="#portfolio" class="cta-primary magnetic-btn">View My Work<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                <a href="#contact" class="cta-secondary magnetic-btn">Let's Talk</a>
+                <a href="https://wa.me/923142267888" target="_blank" rel="noopener" class="whatsapp-cta-btn magnetic-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
+                <a href="https://www.fiverr.com/malikadnan20" target="_blank" rel="noopener" class="fiverr-cta-btn magnetic-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Order on Fiverr</a>
+            </div>
+            <div class="hero-stats-row reveal-element">
+                <div class="hero-stat"><span class="hero-stat-number">Real</span><span class="hero-stat-label">Experience</span></div><span class="hero-stat-sep"></span>
+                <div class="hero-stat"><span class="hero-stat-number">Proven</span><span class="hero-stat-label">Results</span></div><span class="hero-stat-sep"></span>
+                <div class="hero-stat"><span class="hero-stat-number">Trusted</span><span class="hero-stat-label">Partner</span></div>
+            </div>
+            <div class="hero-fiverr-badge reveal-element"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1dbf73" stroke-width="2"/><path d="M7 12l3 3 7-7" stroke="#1dbf73" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Top‑Rated on <strong>Fiverr</strong></span></div>
+        </div>
+        <div class="hero-scroll-hint"><span>Scroll to explore</span><div class="scroll-mouse-icon"><div class="scroll-mouse-wheel"></div></div></div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="section-container">
+            <div class="section-header reveal-element"><span class="section-eyebrow">What I Do</span><h2 class="section-title">Services That <span class="text-gradient">Drive Results</span></h2><p class="section-subtitle">Every service is designed to solve a specific business problem — not just "build a website."</p></div>
+            <div class="services-grid">
+                <div class="service-card glass-card reveal-element"><div class="service-icon-box"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h3 class="service-card-title">WordPress Development</h3><p class="service-card-desc">Custom themes, plugins, and full-site builds engineered for speed, SEO, and conversion.</p><ul class="service-feature-list"><li>Custom Theme Development</li><li>WooCommerce Stores</li><li>Performance Optimization</li><li>SEO-Ready Architecture</li></ul></div>
+                <div class="service-card glass-card reveal-element"><div class="service-icon-box"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.8"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.8"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.8"/></svg></div><h3 class="service-card-title">Landing Pages</h3><p class="service-card-desc">Psychologically-optimized landing pages that convert cold traffic into hot leads.</p><ul class="service-feature-list"><li>Conversion-Focused Layouts</li><li>A/B Testing Ready</li><li>Lightning-Fast Load</li><li>Mobile-First Design</li></ul></div>
+                <div class="service-card glass-card reveal-element"><div class="service-icon-box"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="9" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 17h5l3-8h4l3 8h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3 class="service-card-title">Business Websites</h3><p class="service-card-desc">Multi-page professional websites that establish authority, build trust, and generate leads.</p><ul class="service-feature-list"><li>Multi-Page Architecture</li><li>CMS Integration</li><li>Advanced Animations</li><li>Monthly Maintenance</li></ul></div>
+                <div class="service-card glass-card reveal-element"><div class="service-icon-box"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M9 3v18" stroke="currentColor" stroke-width="1.5"/></svg></div><h3 class="service-card-title">Resume & CV Sites</h3><p class="service-card-desc">Stand out with a stunning online resume that showcases your personal brand.</p><ul class="service-feature-list"><li>Personal Branding</li><li>Interactive Timelines</li><li>PDF Download Option</li><li>ATS-Friendly Format</li></ul></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="portfolio">
+        <div class="section-container">
+            <div class="section-header reveal-element"><span class="section-eyebrow">My Work</span><h2 class="section-title">Projects That <span class="text-gradient">Speak Louder</span></h2><p class="section-subtitle">Real client projects. Real results. Click any card to see the full website.</p></div>
+            <div class="portfolio-grid">
+                <a href="landing-page.html" class="portfolio-card glass-card reveal-element magnetic-btn"><div class="portfolio-card-visual"><div class="portfolio-browser-mock"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-body mock-landing"><div class="mock-hero-block"></div><div class="mock-three-col"><span></span><span></span><span></span></div></div></div></div><div class="portfolio-card-info"><span class="portfolio-tag">Landing Page</span><h3>NovaTech Solutions</h3><p>SaaS landing page with modern gradients and clear conversion funnel.</p><span class="portfolio-view-link">View Project →</span></div></a>
+                <a href="business.html" class="portfolio-card glass-card reveal-element magnetic-btn"><div class="portfolio-card-visual"><div class="portfolio-browser-mock"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-body mock-business"><div class="mock-nav-bar"></div><div class="mock-hero-block"></div><div class="mock-two-col"><span></span><span></span></div></div></div></div><div class="portfolio-card-info"><span class="portfolio-tag">Business Website</span><h3>FitLife Pro</h3><p>Complete fitness brand site with membership tiers and trainer profiles.</p><span class="portfolio-view-link">View Project →</span></div></a>
+                <a href="resume.html" class="portfolio-card glass-card reveal-element magnetic-btn"><div class="portfolio-card-visual"><div class="portfolio-browser-mock"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-body mock-resume"><div class="mock-avatar-circle"></div><div class="mock-text-lines"><span></span><span class="short"></span><span></span></div></div></div></div><div class="portfolio-card-info"><span class="portfolio-tag">Resume / CV</span><h3>BrightCV Agency</h3><p>Elegant online resume platform with interactive experience timeline.</p><span class="portfolio-view-link">View Project →</span></div></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-pricing section-container reveal-element" id="pricing" style="padding-top: 80px; padding-bottom: 100px;">
+        <div class="section-header"><span class="section-eyebrow">Pricing</span><h2 class="section-title">Freelancer <span class="text-gradient">Packages</span></h2><p class="section-subtitle">Transparent, no-surprise pricing. Every package includes design, development, and basic SEO.</p></div>
+        <div class="pricing-grid">
+            <div class="pricing-card glass-card"><p class="pricing-name">Starter</p><p class="pricing-price">$50</p><p class="pricing-desc">1-Page Website</p><ul class="pricing-features"><li>1 Custom Designed Page</li><li>Mobile Responsive</li><li>Contact Form Integration</li><li>Basic SEO Setup</li><li>3 Revisions</li></ul><div class="pricing-cta-group"><a href="https://wa.me/923142267888?text=Hi%20Adnan%2C%20I%20want%20the%20Starter%20Package%20($50)" target="_blank" class="btn-wa magnetic-btn">WhatsApp</a><a href="https://www.fiverr.com/malikadnan20" target="_blank" class="btn-fiverr magnetic-btn">Order on Fiverr</a><a href="#contact" class="btn-contact magnetic-btn">Contact Me</a></div></div>
+            <div class="pricing-card glass-card featured"><span class="pricing-badge">Most Popular</span><p class="pricing-name">Business</p><p class="pricing-price">$120</p><p class="pricing-desc">3–5 Page Website</p><ul class="pricing-features"><li>Up to 5 Custom Pages</li><li>Advanced Animations</li><li>Blog Integration</li><li>On‑Page SEO</li><li>Speed Optimization</li><li>5 Revisions</li></ul><div class="pricing-cta-group"><a href="https://wa.me/923142267888?text=Hi%20Adnan%2C%20I%20want%20the%20Business%20Package%20($120)" target="_blank" class="btn-wa magnetic-btn">WhatsApp</a><a href="https://www.fiverr.com/malikadnan20" target="_blank" class="btn-fiverr magnetic-btn">Order on Fiverr</a><a href="#contact" class="btn-contact magnetic-btn">Contact Me</a></div></div>
+            <div class="pricing-card glass-card"><p class="pricing-name">Premium</p><p class="pricing-price">$250</p><p class="pricing-desc">Full Website Package</p><ul class="pricing-features"><li>Unlimited Pages</li><li>E‑commerce (WooCommerce)</li><li>Custom Plugins/Features</li><li>Advanced SEO & Speed</li><li>Priority Support</li><li>Unlimited Revisions</li></ul><div class="pricing-cta-group"><a href="https://wa.me/923142267888?text=Hi%20Adnan%2C%20I%20want%20the%20Premium%20Package%20($250)" target="_blank" class="btn-wa magnetic-btn">WhatsApp</a><a href="https://www.fiverr.com/malikadnan20" target="_blank" class="btn-fiverr magnetic-btn">Order on Fiverr</a><a href="#contact" class="btn-contact magnetic-btn">Contact Me</a></div></div>
+        </div>
+        <p style="text-align:center; margin-top: 20px; color: var(--text-muted); font-size:0.85rem;">⚡ Limited slots available — <a href="#contact" style="color:var(--accent-2); text-decoration:underline;">get a free consultation</a> before they fill up.</p>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="about-layout">
+                <div class="about-visual-col reveal-element">
+                    <div class="about-avatar-container">
+                        <div class="about-avatar-glow"></div>
+                        <div class="about-avatar-circle">
+                            <img src="images/adnan.jpg" alt="Adnan Saeed" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        </div>
+                    </div>
+                    <div class="about-mini-stat glass-card"><span class="mini-stat-num">Trusted</span><span class="mini-stat-lbl">by Clients<br>Worldwide</span></div>
+                </div>
+                <div class="about-text-col reveal-element">
+                    <span class="section-eyebrow">About Me</span>
+                    <h2 class="section-title">I'm Adnan Saeed —<br><span class="text-gradient">Your WordPress Expert</span></h2>
+                    <p class="about-paragraph">Based in <strong>Karachi, Pakistan</strong>, I run <strong>Adii Digital</strong> — a freelance web development studio focused on one thing: <em>websites that convert.</em> I don't just code; I craft digital experiences that turn visitors into customers.</p>
+                    <p class="about-paragraph">With a track record of successful projects, I've helped startups, coaches, agencies, and e-commerce brands build their online presence the right way. My clients value clean code, clear communication, and on-time delivery — every single time.</p>
+                    <p class="about-paragraph">When you work with me, you get a dedicated partner who genuinely cares about your success — not just another freelancer who disappears after delivery.</p>
+                    <div class="about-skill-tags"><span>WordPress</span><span>PHP</span><span>JavaScript</span><span>React</span><span>CSS3</span><span>WooCommerce</span><span>Elementor</span><span>SEO</span><span>Figma</span><span>Shopify</span><span>GSAP</span><span>REST APIs</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="section-header reveal-element"><span class="section-eyebrow">Get In Touch</span><h2 class="section-title">Ready to <span class="text-gradient">Work Together?</span></h2><p class="section-subtitle">Let's discuss your project. No pressure, no obligation — just a friendly chat about your goals.</p></div>
+            <div class="contact-layout reveal-element">
+                <div class="contact-info-panel glass-card">
+                    <h3 class="contact-panel-title">Contact Details</h3>
+                    <div class="contact-info-item"><div class="contact-info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.8"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.8"/></svg></div><div><span class="ci-label">Email</span><a href="mailto:adnankhanadii123@gmail.com" class="ci-value-link">adnankhanadii123@gmail.com</a></div></div>
+                    <div class="contact-info-item"><div class="contact-info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a15.95 15.95 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.8"/></svg></div><div><span class="ci-label">WhatsApp / Phone</span><a href="https://wa.me/923142267888" class="ci-value-link" target="_blank" rel="noopener">+92 314 2267888</a></div></div>
+                    <div class="contact-info-item"><div class="contact-info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/></svg></div><div><span class="ci-label">Location</span><span class="ci-value">Karachi, Pakistan</span></div></div>
+                    <div class="contact-info-item"><div class="contact-info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><div><span class="ci-label">Response Time</span><span class="ci-value">Within 12 Hours</span></div></div>
+                    <a href="https://wa.me/923142267888" target="_blank" rel="noopener" class="whatsapp-cta-btn magnetic-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Chat on WhatsApp</a>
+                </div>
+                <form class="contact-form-panel glass-card" id="contactForm" action="https://formspree.io/f/mwvyopzj" method="POST">
+                    <input type="hidden" name="_subject" value="New Client Message from Portfolio">
+                    <div class="form-row-duo">
+                        <div class="form-group"><label for="cfName">Your Name</label><input type="text" id="cfName" name="name" placeholder="John Doe" required></div>
+                        <div class="form-group"><label for="cfEmail">Your Email</label><input type="email" id="cfEmail" name="email" placeholder="john@example.com" required></div>
+                    </div>
+                    <div class="form-group"><label for="cfSubject">Project Type</label><select id="cfSubject" name="project"><option value="">Select a service...</option><option>WordPress Development</option><option>Landing Page</option><option>Business Website</option><option>Resume / CV Website</option><option>Other</option></select></div>
+                    <div class="form-group"><label for="cfMessage">Tell Me About Your Project</label><textarea id="cfMessage" name="message" rows="5" placeholder="Describe your goals, timeline, and budget..." required></textarea></div>
+                    <button type="submit" class="form-submit-btn magnetic-btn">Send Message<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="section-container">
+            <div class="footer-top">
+                <div class="footer-brand-col"><a href="#hero" class="footer-logo"><svg width="28" height="28" viewBox="0 0 26 26" fill="none"><rect x="2" y="2" width="22" height="22" rx="6" stroke="url(#footerGrad)" stroke-width="2.2" fill="none"/><circle cx="13" cy="13" r="5" fill="url(#footerGrad)" opacity="0.7"/><defs><linearGradient id="footerGrad" x1="0" y1="0" x2="26" y2="26"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs></svg><span>Adii<span class="brand-accent">Digital</span></span></a><p class="footer-desc">Freelance WordPress & Web Developer crafting high-converting websites that grow your business. Based in Karachi, Pakistan — serving clients worldwide.</p><a href="https://www.fiverr.com/malikadnan20" target="_blank" rel="noopener" class="fiverr-cta-btn magnetic-btn" style="margin-top:12px; display:inline-flex;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Order on Fiverr</a></div>
+                <div class="footer-links-col"><h4>Quick Links</h4><a href="#hero">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+                <div class="footer-links-col"><h4>Projects</h4><a href="landing-page.html">NovaTech Solutions</a><a href="business.html">FitLife Pro</a><a href="resume.html">BrightCV Agency</a></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Adii Digital. All rights reserved. Built with ❤️ in Karachi, Pakistan.</p></div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/923142267888" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
